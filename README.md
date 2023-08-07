@@ -6,7 +6,7 @@ npm i
 ```
 
 ## Agregar variables de entorno
-Hay que crear un archivo llamado .env y poner las variables que cree convenientes.
+Hay que crear un archivo llamado .env y poner la variable VITE_API_URL.
 
 ## Correr el bot
 ```
