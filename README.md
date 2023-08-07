@@ -1,5 +1,5 @@
 # Ruleta Vuejs
-
+![screenshot](https://github.com/nicooris98/Prueba-Tecnica-Vue---Nicolas-Oris/blob/main/public/screen.PNG)
 ## Instalar dependencias
 ```
 npm i
