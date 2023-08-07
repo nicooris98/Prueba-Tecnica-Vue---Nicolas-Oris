@@ -40,17 +40,16 @@ const selectedColor = ref(null);
 
 let selectedEven: boolean = null;
 
-const resultEven = ref(null);
+const resultEven = ref("");
 const resultNumber = ref(null);
 const resultColor = ref(null);
 
 const selectedNumber = ref(null);
 
 const resetRoullete = () => {
-  console.log("reset")
-  resultEven.value = null
+  resultEven.value = ""
   resultColor.value = null
-  resultEven.value = null
+  resultNumber.value = null
   rotate.value = "false"
   bet.value = 0
 }
@@ -147,7 +146,7 @@ const play = async () => {
   }, 0.1);
 
   setTimeout(() => {
-    resultEven.value = evenNumber;
+    resultEven.value = evenNumber ? "e" : "o";
     resultColor.value = colorRoullete
     resultNumber.value = numberRoullete
     if (selectedColor.value && selectedColor.value == colorRoullete) {

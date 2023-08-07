@@ -17,9 +17,9 @@
       <div>
         <p><b>Número: </b>{{ props.number }}</p>
         <p :class="props.color">
-          <b>Color: </b>{{ props.color == "r" ? "Rojo" : "Negro" }}
+          <b>Color: </b>{{ props.color == "r" ? "Rojo" : props.color == "b" ? "Negro" : "" }}
         </p>
-        <p>Es {{ props.isEven ? "par" : "impar" }}</p>
+        <p>{{ props.isEven == "e" ? "Es par" : props.isEven == "o" ? "Es impar" : "" }}</p>
       </div>
     </div>
     <img src="wheel-mobile.png" alt="Image" :class="'rotate ' + props.rotate" />
